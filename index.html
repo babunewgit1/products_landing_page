@@ -1,60 +1,159 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<!-- Meta setup -->
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="keywords" content="">
-		<meta name="decription" content="">
-		<meta name="author" content="Mahmudul Hasan">
-		
-		<!-- Title -->
-		<title>Welcome</title>
-		
-		<!-- Fav Icon -->
-		<link rel="icon" href="img/fav.png" />	
+  <head>
+    <!-- Meta setup -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="decription" content="" />
+    <meta name="author" content="Mahmudul Hasan" />
 
-		<!-- Include Bootstrap -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		
-		<!-- Main StyleSheet -->
-		<link rel="stylesheet" href="css/style.css" />	
-		
-		<!-- Responsive CSS -->
-		<link rel="stylesheet" href="css/responsive.css" />	
-		
-	</head>
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <!-- Title -->
+    <title>Welcome</title>
 
-			
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<!-- Main jQuery -->
-		<script src="js/jquery-3.6.0.min.js"></script>		
+    <!-- Fav Icon -->
+    <link rel="icon" href="img/fav.png" />
 
-		<!-- Bootstrap Js -->
-		<script src="js/bootstrap.bundle.min.js"></script>
-		
-			<!-- Fontawesome Script -->
-		<script src="https://kit.fontawesome.com/e7f2043049.js"></script>
-		
-		<!-- Custom jQuery -->
-		<script src="js/scripts.js"></script>
-		
-		<!-- Scroll-Top button -->
-		<a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
-		
-	</body>
+    <!-- Include Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- header area start -->
+    <header>
+      <div class="container">
+        <div class="header_wrapper">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="menu_item">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li>
+                <a tigger="onedp" href="javascript:void(0)"
+                  >Pain Relief
+                  <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <ul id="onedp" class="dropdown_item">
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                </ul>
+              </li>
+              <li>
+                <a tigger="twodp" href="javascript:void(0)"
+                  >Cold and Flu
+                  <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <ul class="dropdown_item" id="twodp">
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                </ul>
+              </li>
+              <li>
+                <a tigger="threedp" href="javascript:void(0)"
+                  >Allergy <span><i class="fa-solid fa-angle-down"></i></span
+                ></a>
+                <ul class="dropdown_item" id="threedp">
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                  <li><a href="#">dropdown</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Skin Care</a></li>
+              <li><a href="#">Baby Care</a></li>
+              <li><a href="#">Eye and Ear</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu_right">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-cart-shopping"></i><span>03</span></a
+                >
+              </li>
+            </ul>
+            <div class="bar d-block d-lg-none">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- Main jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome Script -->
+    <script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+
+    <!-- Custom jQuery -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Scroll-Top button -->
+    <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
+
+    <script>
+      const menuLink = document.querySelectorAll(".menu_item ul li a");
+      const dropdown = document.querySelectorAll(".dropdown_item");
+
+      menuLink.forEach((item) => {
+        item.addEventListener("click", () => {
+          const itemAttr = item.getAttribute("tigger");
+
+          dropdown.forEach((drop) => {
+            const dropAttr = drop.getAttribute("id");
+            if (itemAttr === dropAttr) {
+              drop.classList.toggle("openDrop");
+            } else {
+              drop.classList.remove("openDrop");
+            }
+          });
+        });
+      });
+
+      const bar = document.querySelector(".bar");
+      const menu = document.querySelector(".menu_item");
+      const body = document.querySelector("body");
+
+      bar.addEventListener("click", () => {
+        menu.classList.toggle("openMenu");
+        bar.classList.toggle("collapse_bar");
+        body.classList.toggle("overflow");
+      });
+    </script>
+  </body>
 </html>
