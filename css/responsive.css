@@ -3,7 +3,56 @@
 Medium Screen - Others
 ====================================
 */
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .logo a img {
+    width: 130px;
+  }
+
+  .menu_item ul {
+    column-gap: 25px;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+  .logo a img {
+    width: 100px;
+  }
+
+  .menu_item ul li a {
+    font-size: 14px;
+  }
+
+  .menu_item ul {
+    column-gap: 15px;
+  }
+
+  .menu_right ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .menu_right ul li a span {
+    font-size: 13px;
+    width: 22px;
+    height: 22px;
+    line-height: 0.8;
+    top: 0;
+    right: 0;
+  }
+
+  .hero_heading h2 {
+    font-size: 36px;
+  }
+
+  .hero_heading p {
+    font-size: 18px;
+  }
+
+  .hero_search {
+    padding: 0;
+  }
 }
 
 /*
@@ -12,22 +61,6 @@ Small Screen - Tablate
 ====================================
 */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-}
-
-/*
-====================================
-Small Screen - Mobile
-====================================
-*/
-@media screen and (min-width: 576px) and (max-width: 767px) {
-}
-
-/*
-====================================
-Xtra Small Screen - Small Mobile
-====================================
-*/
-@media screen and (max-width: 576px) {
   .logo a img {
     display: block;
     width: 120px;
@@ -53,7 +86,7 @@ Xtra Small Screen - Small Mobile
     z-index: 9;
     padding: 20px;
     padding-top: 75px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -108,5 +141,342 @@ Xtra Small Screen - Small Mobile
 
   .openDrop {
     height: auto !important;
+  }
+
+  .hero_wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero_heading h2 {
+    font-size: 28px;
+  }
+
+  .hero_heading p {
+    font-size: 18px;
+  }
+
+  .hero_search {
+    margin-top: 35px;
+    padding: 0;
+  }
+
+  .hero_search_input {
+    display: block;
+  }
+
+  .hero_select {
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+
+  .hero_input input {
+    padding: 15px 15px;
+  }
+
+  .submit_btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+
+  .popular_search {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .popular_search ul li a {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 3px 4px;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .logo a img {
+    display: block;
+    width: 120px;
+  }
+
+  .menu_right {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    position: relative;
+    padding: 15px 0px;
+  }
+
+  .menu_item {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #83c980;
+    left: -100%;
+    top: 0;
+    z-index: 9;
+    padding: 20px;
+    padding-top: 75px;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .menu_item ul {
+    display: block;
+  }
+
+  .menu_right ul li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .menu_right ul li a span {
+    top: -5px;
+    right: -4px;
+  }
+
+  .bar {
+    margin-left: 12px;
+    position: relative;
+    z-index: 19;
+  }
+
+  .menu_item ul li {
+    position: relative;
+    padding: 15px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+  }
+
+  .menu_item ul li:last-child {
+    border: 0;
+  }
+
+  .menu_item ul li ul {
+    position: inherit;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    padding: 0;
+    left: 0;
+    top: 0;
+    background: #ffff;
+    border-radius: 0;
+    margin-top: 10px;
+  }
+
+  .openDrop {
+    height: auto !important;
+  }
+
+  .hero_wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero_heading h2 {
+    font-size: 28px;
+  }
+
+  .hero_heading p {
+    font-size: 18px;
+  }
+
+  .hero_search {
+    margin-top: 35px;
+    padding: 0;
+  }
+
+  .hero_search_input {
+    display: block;
+  }
+
+  .hero_select {
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+
+  .hero_input input {
+    padding: 15px 15px;
+  }
+
+  .submit_btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+
+  .popular_search {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .popular_search ul li a {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 3px 4px;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+  .logo a img {
+    display: block;
+    width: 120px;
+  }
+
+  .menu_right {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    position: relative;
+    padding: 15px 0px;
+  }
+
+  .menu_item {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #83c980;
+    left: -100%;
+    top: 0;
+    z-index: 9;
+    padding: 20px;
+    padding-top: 75px;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .menu_item ul {
+    display: block;
+  }
+
+  .menu_right ul li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .menu_right ul li a span {
+    top: -5px;
+    right: -4px;
+  }
+
+  .bar {
+    margin-left: 12px;
+    position: relative;
+    z-index: 19;
+  }
+
+  .menu_item ul li {
+    position: relative;
+    padding: 15px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
+  }
+
+  .menu_item ul li:last-child {
+    border: 0;
+  }
+
+  .menu_item ul li ul {
+    position: inherit;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    padding: 0;
+    left: 0;
+    top: 0;
+    background: #ffff;
+    border-radius: 0;
+    margin-top: 10px;
+  }
+
+  .openDrop {
+    height: auto !important;
+  }
+
+  .hero_wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero_heading h2 {
+    font-size: 28px;
+  }
+
+  .hero_heading p {
+    font-size: 18px;
+  }
+
+  .hero_search {
+    margin-top: 35px;
+    padding: 0;
+  }
+
+  .hero_search_input {
+    display: block;
+  }
+
+  .hero_select {
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+
+  .hero_input input {
+    padding: 15px 15px;
+  }
+
+  .submit_btn button {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+
+  .popular_search {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .popular_search ul li a {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 3px 4px;
+    margin-left: 0px;
+    margin-top: 5px;
   }
 }
