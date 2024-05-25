@@ -21,6 +21,12 @@
     <!-- Include Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Main StyleSheet -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -163,6 +169,97 @@
     </section>
     <!-- hero area end -->
 
+    <!-- hero_slider area start -->
+    <section id="hero_slider">
+      <div class="container">
+        <div class="hero_slider_wrapper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl1.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl2.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl3.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl1.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl2.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl3.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl1.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl2.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipper_cnt">
+                  <div class="spimg">
+                    <img src="img/sl3.png" alt="" />
+                  </div>
+                  <p>Personal Care</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sp_prev">
+            <span><i class="fa-solid fa-chevron-left"></i></span>
+          </div>
+          <div class="sp_next">
+            <span><i class="fa-solid fa-chevron-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero_slider area end -->
+
     <!-- Main jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
@@ -171,6 +268,9 @@
 
     <!-- Fontawesome Script -->
     <script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom jQuery -->
     <script src="js/scripts.js"></script>
@@ -205,6 +305,35 @@
         menu.classList.toggle("openMenu");
         bar.classList.toggle("collapse_bar");
         body.classList.toggle("overflow");
+      });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".sp_next",
+          prevEl: ".sp_prev",
+        },
+        loop: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          577: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 8,
+            spaceBetween: 20,
+          },
+        },
       });
     </script>
   </body>

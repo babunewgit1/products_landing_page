@@ -479,4 +479,8 @@ Xtra Small Screen - Small Mobile
     margin-left: 0px;
     margin-top: 5px;
   }
+
+  #hero_slider {
+    padding: 30px 0px;
+  }
 }
