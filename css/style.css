@@ -431,3 +431,383 @@ header {
 }
 
 /* -- hero_slider area end -- */
+
+/* -- offer area start -- */
+#offer {
+  background-color: #3b5b39;
+  padding: 30px 0px;
+}
+
+.offer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.offer_wrapper p {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+a.buy_link {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #28a745;
+  border-radius: 6px;
+  padding: 12px 20px;
+}
+
+a.buy_link i {
+  display: inline-block;
+  margin-left: 10px;
+  transition: all 0.2s ease;
+}
+
+a.buy_link:hover i {
+  transform: translate(8px);
+}
+/* -- offer area end -- */
+
+/* -- feature area start -- */
+#feature {
+  background-color: #83c980;
+  padding: 30px 0px;
+}
+
+.feature_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature_item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+.feature_item:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  right: -65px;
+  top: 0;
+}
+
+.feature_left img {
+  display: inline-block;
+  min-width: 60px;
+  max-width: 120px;
+}
+
+.numscroller {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+
+.numscroller:after {
+  content: "+";
+}
+
+.feature_right p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.feature_right h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+}
+
+.fealast_item:after {
+  content: none;
+}
+/* -- feature area end -- */
+
+/* -- deal area start -- */
+.deal_heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.deal_heading p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.best_deal_block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.best_deal_item {
+  border: 1px solid #cccbcb;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.best_deal_item_img img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  min-width: 60%;
+}
+
+.best_deal_item_img {
+  height: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.best_deal_cnt_left h5 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
+.bdreating {
+  display: flex;
+  gap: 10px;
+}
+
+.bdreating p {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.bdreating ul li {
+  display: inline-block;
+  font-size: 10px;
+  color: #f79800;
+  top: -5px;
+  position: relative;
+}
+
+.best_deal_cnt_left {
+  margin-top: 15px;
+}
+
+.best_deal_cnt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.best_deal_cnt_link ul li {
+  display: inline-block;
+}
+
+.best_deal_cnt_link ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #ddd;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.best_deal_cnt_link ul li a:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.best_deal_cnt_link ul li:last-child a {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.best_deal_cnt_link ul li:last-child a:hover {
+  opacity: 0.7;
+}
+
+#deal {
+  padding: 65px 0px;
+}
+/* -- deal area end -- */
+
+/* -- today area start -- */
+#today {
+  background-color: #83c980;
+  padding: 50px 0px;
+}
+
+.today_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 120px;
+  align-items: center;
+}
+
+.today_left_heading h5 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.today_left_heading h2 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.today_cnt p {
+  margin: 30px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.today_cnt_timer {
+  font-family: "Montserrat", sans-serif;
+}
+
+.countdown-container ul li {
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.countdown-container ul li span {
+  display: block;
+  text-align: center;
+  width: 75px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 18px 0px;
+  margin-bottom: 8px;
+}
+
+.today_link {
+  background-color: #385736 !important;
+  margin-top: 40px;
+}
+
+.today_right img {
+  display: block;
+  width: 100%;
+}
+
+.offer_bannar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 25px;
+  gap: 25px;
+}
+
+.offer_bannar img {
+  display: block;
+  width: 100%;
+}
+
+.offter_right {
+  position: relative;
+}
+
+.offer_right_cnt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding-left: 35px;
+}
+
+.offer_right_cnt p {
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.offer_right_cnt p span {
+  font-size: 25px;
+}
+
+.offer_right_cnt h6 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.offer_right_cnt a {
+  display: inline-block;
+  background-color: #298500;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: all 0.2s ease;
+}
+
+.offer_right_cnt a:hover {
+  opacity: 0.7;
+}
+/* -- today area end -- */
+
+/* -- trusted area start -- */
+#trusted {
+  background-color: #3b5b39;
+  padding: 35px 0px;
+  padding-bottom: 35px;
+}
+
+.trusted_wrapper h4 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.trusted_block_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timg {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timg img {
+  max-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* -- trusted area end -- */
