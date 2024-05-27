@@ -53,6 +53,43 @@ Medium Screen - Others
   .hero_search {
     padding: 0;
   }
+
+  .feature_left img {
+    min-width: 30px;
+  }
+
+  .feature_item {
+    gap: 10px;
+  }
+
+  .numscroller {
+    font-size: 20px;
+  }
+
+  .feature_right p {
+    font-size: 16px;
+  }
+
+  .feature_item::after {
+    right: -30px;
+  }
+
+  .best_deal_block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .countdown-container ul li {
+    margin-right: 15px;
+  }
+
+  .footer_heading {
+    font-size: 18px;
+  }
+
+  .footer_address ul li {
+    font-size: 14px;
+  }
 }
 
 /*
@@ -184,8 +221,8 @@ Small Screen - Tablate
 
   .popular_search {
     margin-top: 20px;
-    flex-direction: column;
-    gap: 8px;
+    display: block;
+    text-align: center;
   }
 
   .popular_search ul li a {
@@ -194,6 +231,104 @@ Small Screen - Tablate
     padding: 3px 4px;
     margin-left: 0px;
     margin-top: 5px;
+  }
+
+  #hero_slider {
+    padding: 30px 0px;
+  }
+
+  .offer_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .offer_wrapper p {
+    text-align: center;
+  }
+
+  .feature_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .feature_item:after {
+    content: none;
+  }
+
+  .deal_heading h3 {
+    font-size: 30px;
+  }
+
+  .deal_heading p {
+    margin-top: 15px;
+  }
+
+  .best_deal_block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .today_left_heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .today_wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .today_left {
+    order: 2;
+  }
+
+  .today_right {
+    order: 1;
+  }
+
+  .countdown-container ul li {
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  .offer_bannar {
+    grid-template-columns: 1fr;
+  }
+
+  .offer_right_cnt a {
+    margin-top: 0;
+  }
+
+  .offer_right_cnt p {
+    font-size: 22px;
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer_heading {
+    margin-bottom: 20px;
+  }
+
+  .copyright_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .best_deal_item_img img {
+    min-width: 32%;
+  }
+
+  .hero_select select {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -206,6 +341,10 @@ Small Screen - Mobile
   .logo a img {
     display: block;
     width: 120px;
+  }
+
+  .hero_select select {
+    width: 100%;
   }
 
   .menu_right {
@@ -326,8 +465,8 @@ Small Screen - Mobile
 
   .popular_search {
     margin-top: 20px;
-    flex-direction: column;
-    gap: 8px;
+    display: block;
+    text-align: center;
   }
 
   .popular_search ul li a {
@@ -336,6 +475,104 @@ Small Screen - Mobile
     padding: 3px 4px;
     margin-left: 0px;
     margin-top: 5px;
+  }
+
+  #hero_slider {
+    padding: 30px 0px;
+  }
+
+  .offer_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .offer_wrapper p {
+    text-align: center;
+  }
+
+  .feature_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .feature_item:after {
+    content: none;
+  }
+
+  .deal_heading h3 {
+    font-size: 30px;
+  }
+
+  .deal_heading p {
+    margin-top: 15px;
+  }
+
+  .best_deal_block {
+    grid-template-columns: 1fr;
+  }
+
+  .today_left_heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .today_wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .today_left {
+    order: 2;
+  }
+
+  .today_right {
+    order: 1;
+  }
+
+  .countdown-container ul li {
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  .offer_bannar {
+    grid-template-columns: 1fr;
+  }
+
+  .offer_right_cnt a {
+    margin-top: 0;
+  }
+
+  .offer_right_cnt p {
+    font-size: 22px;
+  }
+
+  .trusted_block_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer_heading {
+    margin-bottom: 20px;
+  }
+
+  .copyright_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .best_deal_item_img img {
+    min-width: 32%;
   }
 }
 
@@ -492,5 +729,88 @@ Xtra Small Screen - Small Mobile
 
   .offer_wrapper p {
     text-align: center;
+  }
+
+  .feature_wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .feature_item:after {
+    content: none;
+  }
+
+  .deal_heading h3 {
+    font-size: 30px;
+  }
+
+  .deal_heading p {
+    margin-top: 15px;
+  }
+
+  .best_deal_block {
+    grid-template-columns: 1fr;
+  }
+
+  .today_left_heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .today_wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .today_left {
+    order: 2;
+  }
+
+  .today_right {
+    order: 1;
+  }
+
+  .countdown-container ul li {
+    text-align: center;
+    display: inline-block;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  .offer_bannar {
+    grid-template-columns: 1fr;
+  }
+
+  .offer_right_cnt a {
+    margin-top: 0;
+  }
+
+  .offer_right_cnt p {
+    font-size: 22px;
+  }
+
+  .trusted_block_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer_heading {
+    margin-bottom: 20px;
+  }
+
+  .copyright_wrapper {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .hero_select select {
+    width: 100%;
   }
 }
